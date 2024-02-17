@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+body {
+  height: 100vh;
+  background: #f5cbcf;
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.single-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 670px;
+  height: 360px;
+  max-width: 100%;
+  border: solid 3px #fff;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to right top,
+    #45b6ff,
+    #78a2ff,
+    #b286f5,
+    #e361ce,
+    #ff3395
+  );
+  box-shadow: 10px 30px 50px -20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.left-set,
+.right-set {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.left-set {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.8px);
+  -webkit-backdrop-filter: blur(6.8px);
+  float: left;
+  height: 450px;
+  width: 320px;
+  margin-top: -50px;
+}
+.left-set img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 350px;
+  border-radius: 1em;
+}
+.right-set {
+  float: right;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+.right-set .name,
+.right-set .subname {
+  font-weight: bold;
+}
+.right-set .name {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.right-set .subname {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+.right-set .price {
+  padding: 1rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.right-set .description p {
+  font-size: 0.9rem;
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+.right-set .color {
+  margin: 1rem 0;
+}
+.right-set .color:after {
+  content: "";
+  display: block;
+  clear: left;
+}
+.right-set .color ul li {
+  width: 20px;
+  height: 20px;
+  border: solid 2px #aaa;
+  list-style: none;
+  border-radius: 5em;
+  float: right;
+  left: -20px;
+  margin-right: 0.4rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.right-set .color ul li:nth-child(1) {
+  background: #a6121e;
+  margin-right: 40px;
+}
+.right-set .color ul li:nth-child(1):hover {
+  border-color: #a6121e;
+}
+.right-set .color ul li:nth-child(2) {
+  background: #252326;
+}
+.right-set .color ul li:nth-child(2):hover {
+  border-color: #252326;
+}
+button {
+  width: 70%;
+  height: 40px;
+  border: 3px solid #b6b6b6;
+  margin-top: 80px;
+  border-radius: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+}
+
+button:hover {
+  background: #315cfd;
+  color: white;
+  font-size: 1em;
+}
